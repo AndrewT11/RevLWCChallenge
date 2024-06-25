@@ -4,7 +4,6 @@ import getSearchAccounts from '@salesforce/apex/AccountHelper.getSearchAccounts'
 export default class RevWiredAccountList extends LightningElement {
 
     searchedAccounts;
-    error;
     searchWord;
 
     // Wire service 

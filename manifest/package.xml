@@ -6,6 +6,7 @@
     </types>
     <types>
         <members>revWiredAccountList</members>
+        <members>revImperativeApexAccountList</members>
         <name>LightningComponentBundle</name>
     </types>
 

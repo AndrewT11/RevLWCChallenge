@@ -1,3 +1,11 @@
 <template>
-    
+    <lightning-input class="input" type="text" label="search"></lightning-input>
+    <lightning-button variant="brand" label="Search" onclick={handleSearch}></lightning-button>
+
+    <h2>Imperative Apex</h2>
+    <template lwc:if={searchedAccounts}>
+        <template for:each={searchedAccounts} for:item="acct">
+            <p class="p" key={acct.id}>Name: {acct.Name}</p>
+        </template>
+    </template>
 </template>
