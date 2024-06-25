@@ -1,0 +1,14 @@
+<template>
+    <lightning-input class="input" type="text" label="search"></lightning-input>
+    <lightning-button variant="brand" label="Search" onclick={handleSearch}></lightning-button>
+
+    <h2>Reactive Wire Service</h2>
+    <template lwc:if={searchedAccounts.data}>
+        <lightning-datatable
+            hide-checkbox-column
+            key-field="id"
+            data={searchedAccounts.data}
+            columns={columns}>
+        </lightning-datatable>
+    </template>
+</template>
